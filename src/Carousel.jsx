@@ -18,7 +18,7 @@ export const Carousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       getManga();  
-    }, 5000);
+    }, 1000);
     return ()=> clearInterval(interval);
   }, []);
 
