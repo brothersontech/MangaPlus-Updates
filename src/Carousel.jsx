@@ -2,13 +2,13 @@
 import React, { useState, useEffect } from "react";
 import { CarouselItem } from "./CarouselItem";
 import {createClient} from '@supabase/supabase-js'
-import { supabaseVars } from './SupabaseVariables';
+// import { supabaseVars } from './SupabaseVariables';
 
 
 export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [mangas, setManga] = useState([]);
-  const supabase = createClient(supabaseVars.url, supabaseVars.apiKey)
+  const supabase = createClient(process.env.url, process.env.apiKey)
 
 
   useEffect(() => {
