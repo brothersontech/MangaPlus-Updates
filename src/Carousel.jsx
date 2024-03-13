@@ -8,8 +8,8 @@ import {createClient} from '@supabase/supabase-js'
 export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [mangas, setManga] = useState([]);
-  const supabase = createClient(process.env.url, process.env.apiKey)
-  console.log(process.env.url);
+  const supabase = createClient(process.env.REACT_APP_URL, process.env.REACT_APP_APIKEY)
+  console.log(process.env.REACT_APP_url);
 
   useEffect(() => {
     getManga();
