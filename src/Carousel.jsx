@@ -9,7 +9,7 @@ export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [mangas, setManga] = useState([]);
   const supabase = createClient(process.env.url, process.env.apiKey)
-
+  console.log(process.env.url);
 
   useEffect(() => {
     getManga();
