@@ -18,7 +18,6 @@ export const CarouselItem = ({ manga, width }) => {
       <a href={manga.url}><img className="carousel-img" src={manga.img_url} /></a>
       <div className="carousel-item-text"><a href={manga.url}>{manga.title}</a>
       <p>Author(s): {manga.author}</p>
-      <p>Description:</p>{manga.manga_description}</div>
     </div>
   );
 };
